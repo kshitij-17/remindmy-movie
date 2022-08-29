@@ -1,0 +1,66 @@
+.MCard {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding: 10px;
+    margin: 5px 0;
+    
+    background-color: rgb(23, 91, 193);
+    border-radius: 10px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  
+#visin{
+    font-size: 1.4rem;
+    position: absolute;
+    display: flex;
+    left: 15%;
+    top: 7%;
+    
+    justify-content: center;
+    opacity: 0;
+}
+  .mainhover:hover .MCard{
+    background-color: white;
+    
+    color: black; 
+  }
+
+  .MCard:hover > img{
+    opacity: 0.5;
+  }
+
+ .MCard:hover > #visin{
+    opacity: 1;
+    z-index: 100;
+ }
+  
+  @media (max-width: 550px) {
+    .MCard{
+      width: 46%;
+    }
+  }
+  
+  .poster1 {
+    
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px  black;
+  }
+  
+  .title1 {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  
+  .year1 {
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 3px;
+    padding: 0 2px;
+    padding-bottom: 3px;
+  }
